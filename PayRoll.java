@@ -5,7 +5,7 @@ class employee{
 		System.out.println(name+" "+salary*12);
 	}
 	void calculatePay(String name,double hourlyRate,double hoursWorked) {
-		System.out.println(name+" "+hourlyRate*hoursWorked);
+		System.out.println(name+" "+hourlyRate*hoursWorked*7);
 	}
 }
 class SalariedEmployee extends employee{
@@ -29,8 +29,8 @@ public class PayRoll {
 		
 		HourlyEmployee hemployee =new HourlyEmployee();
 		hemployee.name="Serena";
-		hemployee.hourlyRate=30000;
-		hemployee.hoursWorked=50;
+		hemployee.hourlyRate=300;
+		hemployee.hoursWorked=10;
 		semployee.calculatePay(hemployee.name,hemployee.hourlyRate,hemployee.hoursWorked);
 
 	}
